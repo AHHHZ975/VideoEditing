@@ -184,6 +184,37 @@
 </section>
 <!-- End methodology -->
 
+<!-- Quantitative comparison -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Quantitative Comparison</h2>
+        <div class="content has-text-justified">
+          <p>
+              To numerically evaluate our method, we follow the criteria used by several state-of-the-art approaches in the literature [1, 2]:
+              Structural similarity (SSIM) index and peak signal-to-noise ratio (PSNR). These are methods for measuring the similarity between two images.
+              The SSIM index can be viewed as a quality measure of one of the compared images, provided the other image is of perfect quality. We use both PSNR and SSIM
+              metrics to evaluate the visual and perceptual similarity between input and output videos. More specifically, comparing our method with ProPainter [2] and 
+              E2FGvI [1] using the metrics mentioned above provides an insight into how similar the corresponding parts are in the input and output (edited) video frames.
+              This is useful when we compare all the methods on the video object removal and video object retargeting task (explained in Section 3 of the main paper).
+              Since in these two tasks it is desired to remove the masked-out areas and replace them with contents around the masked-out area in the input frames.
+              As a result, it is important to know how effective the methods are in editing the masked-out object while keeping other areas in the input video unchanged.              
+          </p>
+          <img src="static/images/Quantitative_Results.png" alt=" A quantitative comparison between our proposed method, ProPainter, and E2FGVI" class="blend-img-background center-image">
+          <p>
+            Note that we do not compare the results of our method with Propainter and E2FGvI for the video object replacement task as those methods cannot perform those tasks. 
+            We achieve better results with all metrics in the video object retargeting task, as indicated in table above. The superiority of the proposed method can also be visually
+            verified by the qualitative results in the video above. Regarding the results of the video object removal task, our method achieves results more or less the same level of
+            fidelity compared to the state-of-the-art.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End quantitative comparison -->
+
 
 
 
