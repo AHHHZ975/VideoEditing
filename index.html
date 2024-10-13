@@ -130,7 +130,7 @@
 <!-- End youtube video -->  
 
 
-<!-- Paper abstract -->
+<!-- Abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -152,9 +152,9 @@
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End abstract -->
 
-<!-- Paper abstract -->
+<!-- Methodology -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -169,11 +169,11 @@
                 That is why our approach does not add any additional training or fine-tuning. Then, having these extracted similar features, we enforce the
                 model to edit (reconstruct) the video in a way that the regions in the frames that have similar features will be kept unchanged while the other
                 parts of the frames will be changed according to the control commands (mask and text prompts). In this way, we ensure that the edited information
-                will be consistent across all the video frames no matter what the shape and position of the masked area is. \cref{fig:DiffusionProcess} (right)
-                demonstrates a visual representation of how the forward path of the extended attention works in our framework. \cref{fig:DiffusionProcess} (left)
-                shows the whole diffusion process of our temporal consistent video editing technique. More specifically, for each diffusion step, similar to \cite{TokenFlow},
+                will be consistent across all the video frames no matter what the shape and position of the masked area is. Figure below (right)
+                demonstrates a visual representation of how the forward path of the extended attention works in our framework. Figure below (left)
+                shows the whole diffusion process of our temporal consistent video editing technique. More specifically, for each diffusion step,
                 we randomly select several frames and their corresponding mask images. Then, these pairs of masks and images are fed into a pre-processor algorithm
-                explained above. Then, the extended attention layers in the U-Net architecture, showing in \cref{fig:DiffusionProcess}, extract similar features from
+                explained above. Then, the extended attention layers in the U-Net architecture, showing in figure below, extract similar features from
                 the selected frames. This process is repeated for $T=50$ diffusion steps.
           </p>
           <img src="static/images/Diffusion_inpainting_process.png" alt="An overview of the diffusion process for temporal consistent video editing" class="blend-img-background center-image">
@@ -182,7 +182,7 @@
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End methodology -->
 
 
 
